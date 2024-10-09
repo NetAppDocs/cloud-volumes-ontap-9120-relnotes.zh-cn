@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations-azure.html 
+keywords: limitations, ha, azure, pay-as-you-go, paygo, cloud solution provider, nfsv3 
+summary: 这些已知限制特定于 Microsoft Azure 中的 Cloud Volumes ONTAP 。 
+---
+= Azure 中的已知限制
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+以下已知限制特定于 Microsoft Azure 中的 Cloud Volumes ONTAP 。请务必同时查看link:reference-limitations.html["所有云提供商中 Cloud Volumes ONTAP 的限制"]。
+
+
+
+== Flash Cache 限制
+
+Standard_L8s_v2 VM 类型包括本地 NVMe 存储， Cloud Volumes ONTAP 将其用作 _Flash Cache_.请注意 Flash Cache 的以下限制：
+
+* 必须在所有卷上禁用数据压缩，才能利用 Flash Cache 性能改进功能。
++
+在从BlueXP  创建卷时，您可以选择不使用存储效率，也可以创建卷，然后选择 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["使用命令行界面禁用数据压缩"^]。
+
+* Cloud Volumes ONTAP 不支持在重新启动后重新恢复缓存。
+
+
+
+
+== HA 限制
+
+某些地区不支持 HA 对。
+
+https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的 Azure 区域列表"^](英文)
