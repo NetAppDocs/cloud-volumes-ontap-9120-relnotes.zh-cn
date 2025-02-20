@@ -2,7 +2,6 @@
 <blocks>
   <block id="e70747c71702cdc100bd5f592ed452be" category="summary">Cloud Volumes ONTAP 提供了多种许可选项。每个选项都可用于选择满足您需求的配置。</block>
   <block id="be02aeef4770b69cefbe40935aba2797" category="doc">Cloud Volumes ONTAP 许可</block>
-  <block id="30af1a6878bac3a7aaed5d0e64e7b511" category="paragraph">Cloud Volumes ONTAP 提供了不同的许可选项、可让您根据自己的需求选择消费模式。</block>
   <block id="f008ecd5469e24eee31eb4e2e4a1e23f" category="paragraph">新客户可以使用以下许可选项。</block>
   <block id="19bcaffbe8361f9d452beabc8065f223" category="list-text">基于容量的许可包</block>
   <block id="e7cf94fb6f7d5441689859c52b410a98" category="list-text">通过基于容量的许可，您可以按每 TiB 容量为 Cloud Volumes ONTAP 付费。此许可证与您的 NetApp 帐户关联，您可以使用此许可证向多个系统收取费用，前提是可通过此许可证获得足够的容量。</block>
@@ -638,7 +637,6 @@
   <block id="1222cf807490df82fd7e0146eb6798c1" category="paragraph">宣布维护窗口后，目标节点的配对节点将执行接管。维护完成后，将启动交还。交还后， HA 对应恢复为运行状况良好的状态。如果未发生这种情况，请联系 NetApp 支持部门以获得帮助。请注意，维护事件一次针对 HA 对中的一个虚拟机，通常这两个节点都是在相对较短的时间内针对的。</block>
   <block id="1355c3042f61af06b4a61506de6e8ad1" category="paragraph">使用 Cloud Volumes ONTAP 非持续可用的 CIFS 共享的 CIFS/SMB 客户端将在发生接管时以及将会话所使用的聚合交还给聚合的主节点时丢失会话。这是 CIFS/SMB 协议本身施加的限制。客户可能希望使用第三方产品来避免因接管和交还而可能出现的问题。要获得更多帮助，请联系 NetApp 支持部门。</block>
   <block id="6bdf72ac241a1b505deb0094dcc551a4" category="sidebar">本发行说明介绍了Cloud Volumes ONTAP 9.12.0的新增功能、限制和已知问题。</block>
-  <block id="9b35e8c83aa7d0298b0eff1e6b7a9a77" category="sidebar">Cloud Volumes ONTAP 9.12.0发行说明</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">开始使用</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="8efc36afc2e7202a9c9bda00b8e8a75d" category="sidebar">许可概述</block>
@@ -652,7 +650,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP博客</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
-  <block id="da38098873cb3db962a9491ab33ff93d" category="sidebar">发行说明主页</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="sidebar">AWS</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="sidebar">Azure</block>
   <block id="482723983a4f2af954e36ff41e567451" category="sidebar">已知限制</block>
@@ -660,4 +657,11 @@
   <block id="5313a9ac102424f63dd4d76f5280130e" category="sidebar">AWS 中的限制</block>
   <block id="1fff298355326f8c77bd77059a41c1a2" category="sidebar">Azure 中的限制</block>
   <block id="9a3a0c4b2afbb088e029484d4b34ba8b" category="sidebar">Google Cloud 中的限制</block>
+  <block id="6b32e99bddf60938239aabe092cb4c16" category="paragraph">Cloud Volumes ONTAP 提供了多种许可选项。每个选项都允许您选择一种满足您需求的消费模式。</block>
+  <block id="27fe4eb3edbaff8f250e2d51f7462681" category="inline-link">软件包</block>
+  <block id="13dba612a4f942a80cbc82c5f678d57c" category="inline-link">有关基于容量的许可证的更多信息</block>
+  <block id="d994821c78c4538d3406d1baa52bc470" category="paragraph"><block ref="55cb08b70ffaa99b7ec18860c0180e14" category="inline-link-rx"></block> <block ref="7c9574dfed81dad53ed1c2acf3a874b5" category="inline-link-rx"></block></block>
+  <block id="c3647f40e3574e0e6f49e20c19135bfa" category="section-title">使用Azure VM扩展的限制</block>
+  <block id="9d167ed7d52d81da8d83590ec3b5a4af" category="paragraph">Cloud Volumes ONTAP不支持在部署中使用Azure虚拟机(VM)扩展和VM应用程序。在Azure中将Cloud Volumes ONTAP与VM扩展结合使用会导致操作延迟、NetApp建议避免这些延迟。</block>
+  <block id="a6c05065d2d7f18666563629721d0545" category="sidebar">Cloud Volumes ONTAP 9.12.0发行说明</block>
 </blocks>
