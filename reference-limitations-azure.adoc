@@ -41,4 +41,4 @@ Standard_L8s_v2 VM 类型包括本地 NVMe 存储， Cloud Volumes ONTAP 将其�
 
 某些地区不支持 HA 对。
 
-https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的 Azure 区域列表"^](英文)
+https://bluexp.netapp.com/cloud-volumes-global-regions["查看支持的 Azure 区域列表"^](英文)
